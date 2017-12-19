@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Time Slider Example</title>
+    <link rel="stylesheet" type="text/css" href="./lib/TimeSlider.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body style="font-family:Arial, Verdana;background-color:#fff;">
+    <script type="text/javascript" src="./lib/TimeSlider.js"></script>
+    <div id="slider_container"></div>
+    <script type="text/javascript">
+    //init here
+        var timeSlider = new window.TimeSlider($("#slider_container"), {
+            sliderTicks: [
+                {value: 1, label: "1个月"},
+                {value: 2, label: "2个月"},
+                {value: 3, label: "3个月"},
+                {value: 4, label: "4个月"}
+            ]
+        });
+        timeSlider.render();
+    </script>
+</body>
+</html>
